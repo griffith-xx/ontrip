@@ -1,30 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./sections/Navbar.vue";
+import Hero from "./sections/Hero.vue";
+import Categories from "./sections/Categories.vue";
+import Video from "./sections/Video.vue";
+import Popular from "./sections/Popular.vue";
+import Trip from "./sections/Trip.vue";
+import FeedBack from "./sections/FeedBack.vue";
+import Subscribe from "./sections/Subscribe.vue";
+import Footer from "./sections/Footer.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="font-prompt antialiased max-w-[1440px] mx-auto bg-[#E2EBF0]">
+    <Navbar />
+    <Hero />
+    <div class="max-w-[1200px] w-full mx-auto">
+      <Categories />
+      <Video />
+      <Popular />
+      <Trip />
+      <FeedBack />
+      <Subscribe />
+    </div>
+    <Footer />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
